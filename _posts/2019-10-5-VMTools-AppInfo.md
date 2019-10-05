@@ -12,7 +12,7 @@ I decided to find out for myself. Spinning up a Windows Server 2016 VM, I instal
 
 
 ### Inside the Guest OS
-The Configuring appInfo (https://docs.vmware.com/en/VMware-Tools/11.0.0/com.vmware.vsphere.vmwaretools.doc/GUID-3A8089F6-CAF6-43B9-BD9D-B1081F8D64E2.html)  section of the VMWare Tools Product Documentation gives a good idea of what we can do from within the guest OS. There isn’t all that much to it.
+The [Configuring appInfo ](https://docs.vmware.com/en/VMware-Tools/11.0.0/com.vmware.vsphere.vmwaretools.doc/GUID-3A8089F6-CAF6-43B9-BD9D-B1081F8D64E2.html)  section of the VMWare Tools Product Documentation gives a good idea of what we can do from within the guest OS. There isn’t all that much to it.
 
 We can retrieve the data
 
@@ -23,6 +23,8 @@ Change the polling interval. Here I have reduced it from the default 30 minutes 
 ![Changing poll interval]({{ site.baseurl }}/images/VMTools-appinfo-poll-interval.png)
 
 And for Guest OS admin to stop the vSphere Admin from knowing what processes they are running, it can be disabled.
+
+![Changing poll interval]({{ site.baseurl }}/images/VMTools-appinfo-disabled.png)
 
 ### Outside the Guest OS
 It's a lot more interesting to be able to access AppInfo from outside the Guest OS.
