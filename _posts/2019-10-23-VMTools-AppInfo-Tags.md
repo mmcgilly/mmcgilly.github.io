@@ -3,9 +3,9 @@ layout: post
 title: VMware Tools 11 - Tagging with AppInfo
 ---
 
-This post follws on from my blog about the new AppInfo component in VMware Tools 11.0
+This post follows on from my blog about the new AppInfo component in VMware Tools 11.0
 
-[VMware Tools 11 - New AppInfo component]({% post-url 2019-10-5-VMTools-AppInfo %})
+[VMware Tools 11 - New AppInfo component]({% post_url 2019-10-5-VMTools-AppInfo %})
 
 Now that we can see process info from inside a guest OS the question becomes - what can do with it?
 
@@ -64,13 +64,16 @@ The tags need to already exist in vCenter.
 For ease of explanation I'm going to show how you can assign a tag PowerShell when you find powershell.exe running in a VM.
 
 Based on a simple set of mappings from Process to Tag which can be easily kept in a CSV file -
+
 TagMappings.csv
+```
 Process,Tag
 mssqlserver.exe,MS SQL Server
 oracle.exe, Oracle DB
 tomcat6.exe, Tomcat
 powershell.exe,PowerShell
 iexplore.exe,Internet Explorer
+```
 
 The tags need to already exist in vCenter.
 
